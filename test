@@ -1,0 +1,11 @@
+delta.Settings:AddDropdown("Fov changer", "", "Nothing!", {"normal", "90", "120", "135"}, function(selected)
+  if selected == "normal" then
+    game.Workspace.CurrentCamera.FieldOfView = 80 --normal fov change if would like
+  elseif selected == "90" then
+    game.Workspace.CurrentCamera.FieldOfView = 90
+  elseif selected == "120" then
+    game.Workspace.CurrentCamera.FieldOfView = 120
+  elseif selected == "135" then
+    game.Workspace.CurrentCamera.FieldOfView = 135
+  end
+end)
